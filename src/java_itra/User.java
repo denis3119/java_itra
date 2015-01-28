@@ -1,5 +1,7 @@
 package java_itra;
 
+import com.sun.javafx.scene.layout.region.Margins;
+
 /**
  * Created by denik on 28.01.2015.
  */
@@ -9,6 +11,15 @@ public class User {
     private int id;
     private String username;
     private String password;
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
     private boolean enabled;
 
     public int getId() {
@@ -35,13 +46,6 @@ public class User {
         this.password = password;
     }
 
-    public boolean isEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
-    }
 
 
 
