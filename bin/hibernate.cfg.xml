@@ -11,6 +11,6 @@
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
   <property name="hibernate.show_sql">true</property>
   <property name="hbm2ddl.auto">update</property>
-  <mapping resource="java_itra/User.hbm.xml"/>
+  <mapping resource="User.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

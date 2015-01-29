@@ -1,4 +1,4 @@
-package java_itra;
+package Hiberante;
 
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;

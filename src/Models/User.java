@@ -1,17 +1,20 @@
-package java_itra;
+package Models;
 
 import com.sun.javafx.scene.layout.region.Margins;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by denik on 28.01.2015.
  */
 
-public class User {
+public class User extends Entity {
 
-    private int id;
     private String username;
     private String password;
 
+    private Set<Publication> publications = new HashSet<Publication>();
     public boolean isEnabled() {
         return enabled;
     }
@@ -21,14 +24,6 @@ public class User {
     }
 
     private boolean enabled;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getUsername() {
         return username;
